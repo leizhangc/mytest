@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<!--定义日志文件的存储地址 勿在 LogBack 的配置中使用相对路径 -->
+	<property name="LOG_HOME" value="/home/wheeler/workspace/mygood/gisdata/logs" />
+	<appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>HERE %d{HH:mm:ss.SSS} [%thread] %-5level %C{36} %L - %msg%n</pattern> 
+		</encoder>
+	</appender>
+	<Encoding>UTF-8</Encoding>
+	<!-- 日志输出级别 -->
+	<root level="info">
+		<appender-ref ref="stdout" />   	
+	</root>
+</configuration>
